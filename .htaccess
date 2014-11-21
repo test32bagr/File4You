@@ -1,0 +1,7 @@
+<Files "data/log.txt">
+	Order allow,deny
+	Deny from all
+</Files>
+
+php_value upload_max_filesize 30M
+php_value post_max_size 30M

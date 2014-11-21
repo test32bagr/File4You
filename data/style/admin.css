@@ -1,0 +1,159 @@
+*:focus{
+	outline: none;
+}
+html, body{
+	background: Whitesmoke;
+	margin: 0px;
+	padding: 0px;
+}
+a{
+	text-decoration: none;
+	transition: 500ms all;
+}
+header #hlavicka{
+	background: Black;
+	text-align: right;
+	color: White;
+	padding: 5px;
+	font-family: Signika, Sans-serif;
+}
+header #hlavicka div{
+	margin-left: auto;
+	margin-right: auto;
+	width: 80vw;
+}
+header #hlavicka a{
+	color: White;
+}
+header #hlavicka a:hover{
+	color: orange;
+}
+header #podhlavicka{
+	background: LightGray;
+	-webkit-box-shadow: 0px 5px 24px 0px rgba(50, 50, 50, 0.8);
+	-moz-box-shadow: 0px 5px 24px 0px rgba(50, 50, 50, 0.8);
+	box-shadow: 0px 5px 24px 0px rgba(50, 50, 50, 0.8);
+}
+header #podhlavicka h2{
+	margin: 0px;
+	text-align: center;
+	font-weight: 100;
+	font: 35px 'Roboto', Calibri, Arial, Sans-serif;
+}
+#stranka{
+	margin-left: auto;
+	margin-right: auto;
+	width: 95vw;
+}
+footer{
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	font: 17px Signika, sans-serif;
+}
+footer a{
+	color: Black;
+}
+footer a:hover{
+	color: Orange;
+}
+#stranka h2{
+	font-weight: 100;
+	color: Green;
+	font-family: 'Roboto', sans-serif;
+	margin-bottom: 0px;
+}
+#stranka table{
+	margin: 0px;
+	font: 17px Calibri, sans-serif, Arial;
+	border-bottom: 1px solid;
+}
+.tables{
+	width: 100%;
+}
+#InfoFiles{
+	margin-left: auto;
+	margin-right: auto;
+	width: 40vw;
+	text-align: center;
+	font: 18px 'Signika', sans-serif, Arial;
+	border: 1px solid;
+	padding: 5px;
+}
+@media(max-width: 500px){
+	table tr th{ display: none; }
+}
+#Files{
+	border-collapse: collapse;
+}
+#Files tr td{
+	border: 1px solid;
+	border-top: none;
+}
+#NoFiles{
+	margin-left: auto;
+	margin-right: auto;
+	width: 40vw;
+	text-align: center;
+	font: 18px 'Signika', sans-serif, Arial;
+	border: 1px solid;
+	padding: 5px;
+	color: Red;
+}
+#upravitSoubor{
+	border-bottom: none;
+}
+#upravit_soubor thead{
+	margin-bottom: 5px;
+}
+.changeForm{
+	border: 1px solid;
+	text-align: center;
+	font: 16px Signika, sans-serif;
+}
+#prejmenovat p{
+	margin: 2px;
+	font: 16px Signika, Sans-serif;
+	text-align: center;
+}
+.changeForm input[type=text]{
+	width: 80%;
+	height: 20px;
+	margin: 2px;
+	padding: 5px;
+	font: 15px Arial;
+}
+.changeForm input[type=submit]{
+	width: 30%;
+	margin: 10px;
+	height: 30px;
+	border: 1px solid DimGray;
+	background: DimGray;
+	font: 115% Arial;
+	transition: 500ms all;
+	color: White;
+	cursor: pointer;
+}
+.changeForm input[type=submit]:hover{
+	background: White;
+	color: Black;
+}
+.changeForm h2{
+	margin-top: 5px;
+	margin-left: 10px;
+	text-align: left;
+}
+#zmenit_typ select{
+	width: 60%;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+#adminServices{
+	margin-left: auto;
+	margin-right: auto;
+	width: 50vw;
+}
+#adminServices table{
+	width: 100%;
+}

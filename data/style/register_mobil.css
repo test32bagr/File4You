@@ -1,0 +1,62 @@
+html, body{ 
+	background: #f1f1f1;
+	margin: 0px; 
+	padding: 0px;
+}
+form{
+	margin: 0px; 
+	margin-left: auto; 
+	margin-right: auto; 
+	width: 100%; 
+	background: #fff; 
+}
+form h2{
+	margin: 0px;
+	font: 30px 'Roboto',sans-serif;  
+	font-weight: 100;
+	padding-top: 5px; 
+	text-align: center;
+}
+form table{
+	margin-left: auto;
+	margin-right: auto;
+	width: 95%;
+	font: 20px Calibri;
+	font-weight: 100;
+}
+form input[type=text], form input[type=password], form input[type=email], form input[type=number]{ 
+	width: 100%; 
+	height: 30px; 
+	border: 1px solid; 
+	border-radius: 2px; 
+	padding-left: 3px; 
+	font: 20px Calibri; 
+	background: #fcfcfc; 
+}
+#RegText{
+	text-align: center;
+	margin: 3px;
+	font-size: 110%;
+}
+form input[type=submit]{ 
+	width: 60%;
+	height: 35px; 
+	margin-top: 2px;
+	margin-bottom: 10px; 
+	background: Gold; 
+	transition: 300ms;
+	border: 1px solid Gold;
+	border-radius: 8px; 
+	font: 20px 'Roboto', sans-serif; 
+	font-weight: 300;
+}
+form input[type=submit]:hover{ background: LightGray; }
+form a{ 
+	color: DimGray;
+	transition: 300ms;
+	text-decoration: none;
+	font: 20px sans-serif;
+	padding-bottom: 10px;
+}
+form a:hover{ color: Black; }
+#endora{ display: none; }

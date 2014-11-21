@@ -1,0 +1,71 @@
+*:focus{ outline: none; }
+body{
+	background: Whitesmoke;
+	font-family: Calibri;
+	margin: 0px;
+}
+#hlavicka{
+	min-width: 100%;
+	height: 8vw;
+	background: DodgerBlue;
+	box-shadow: 0px 10px 5px #888;
+}
+#hlavicka h2{
+	margin: 0px;
+	margin-left: auto;
+	margin-right: auto;
+	width: 50vw;
+	color: White;
+	font-weight: 100;
+	font: 3.5vw 'Roboto', sans-serif;
+	text-align: center;
+	padding-top: 1vw;
+	border-bottom: 1px solid;
+}
+#powered{
+	position: fixed;
+	bottom: 0px;
+	left: 0px;
+	font: 18px 'Open Sans Condensed', sans-serif;
+}
+form{
+	margin: 0px;
+	margin-left: auto;
+	margin-right: auto;
+	width: 40vw;
+	margin-top: 25px;
+}
+form input[type=text], form input[type=password]{
+	width: 100%;
+	margin-top: 8px;
+	height: 20px;
+	font: 15px Arial;
+	padding: 3px;
+	padding-right: 0px;
+}
+form input[type=submit]{
+	margin: 0px;
+	padding: 0px;
+	margin-top: 10px;
+	margin-left: 5vw;
+	width: 20vw;
+	height: 40px;
+	font: 20px Calibri, sans-serif, arial;
+	background: Gold;
+	border: 1px solid Gold;
+	cursor: pointer;
+	color: Black;
+	transition: 500ms all;
+}
+form input[type=submit]:hover{
+	background: Orange;
+	border: 1px solid Orange;
+}
+a{
+	text-decoration: none;
+	color: Gray;
+	font: 19px Calibri, sans-serif, arial;
+	width: 4vw;
+	transition: 500ms all;
+}
+a:hover{ color: Blue; }

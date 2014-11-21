@@ -1,0 +1,92 @@
+*:focus{
+	outline: none;
+}
+html, body{
+	background: Whitesmoke;
+	margin: 0px;
+	padding: 0px;
+}
+a{
+	text-decoration: none;
+	transition: 500ms all;
+}
+header #hlavicka{
+	background: Black;
+	text-align: center;
+	color: White;
+	padding: 5px;
+	font-family: Signika, Sans-serif;
+}
+header #hlavicka div{
+	margin-left: auto;
+	margin-right: auto;
+	width: 80%;
+}
+header #hlavicka a{ color: White; }
+header #hlavicka a:hover{ color: orange; }
+header #podhlavicka{
+	background: LightGray;
+	-webkit-box-shadow: 0px 5px 24px 0px rgba(50, 50, 50, 0.8);
+	-moz-box-shadow: 0px 5px 24px 0px rgba(50, 50, 50, 0.8);
+	box-shadow: 0px 5px 24px 0px rgba(50, 50, 50, 0.8);
+}
+header #podhlavicka h2{
+	margin: 0px;
+	text-align: center;
+	font-weight: 100;
+	font: 35px 'Roboto', Calibri, Arial, Sans-serif;
+}
+#stranka{
+	margin-left: auto;
+	margin-right: auto;
+	width: 90%;
+}
+table{
+	width: 100%;
+	margin-top: 10px;
+	font: 18px Signika, Sans-serif;
+}
+table caption{
+	margin-top: 25px;
+}
+table caption #caption{
+	font: 25px Signika, Sans-serif;
+}
+table caption #caption img{
+	margin-top: 25px;
+	width: 80%;
+}
+table tr td a{
+	color: Blue;
+	font-size: 110%;
+}
+table tr td a:hover{
+	color: Green;
+}
+#upload_button{
+	display: none;
+}
+footer{
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	font: 17px Signika, sans-serif;
+}
+footer a{
+	color: Black;
+}
+footer a:hover{
+	color: Orange;
+}
+#shutdown{
+	padding: 10px; 
+	margin-left: auto;
+	margin-right: auto;
+	width: 40vw;
+	margin-top: 25px;
+	font-family: 'Signika', sans-serif;
+	text-align: center;
+}
+#chat{
+	display: none;
+}

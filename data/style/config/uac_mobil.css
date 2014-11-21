@@ -1,0 +1,95 @@
+*:focus{
+	outline: none;
+}
+html, body{
+	background: Whitesmoke;
+	margin: 0px;
+	padding: 0px;
+}
+a{
+	text-decoration: none;
+	transition: 500ms all;
+}
+header #hlavicka{
+	background: Black;
+	text-align: center;
+	color: White;
+	padding: 5px;
+	font-family: Signika, Sans-serif;
+}
+header #hlavicka div{
+	margin-left: auto;
+	margin-right: auto;
+	width: 90%;
+}
+header #hlavicka a{ color: White; }
+header #hlavicka a:hover{ color: orange; }
+header #podhlavicka{
+	background: LightGray;
+	-webkit-box-shadow: 0px 5px 24px 0px rgba(50, 50, 50, 0.8);
+	-moz-box-shadow: 0px 5px 24px 0px rgba(50, 50, 50, 0.8);
+	box-shadow: 0px 5px 24px 0px rgba(50, 50, 50, 0.8);
+}
+header #podhlavicka h2{
+	margin: 0px;
+	text-align: center;
+	font-weight: 100;
+	font: 35px 'Roboto', Calibri, Arial, Sans-serif;
+}
+#stranka{
+	margin-left: auto;
+	margin-right: auto;
+	width: 95%;
+}
+footer{
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	font: 17px Signika, sans-serif;
+}
+footer a{ color: Black; }
+footer a:hover{ color: Orange; }
+#stranka #nadpis{
+	text-align: center;
+	font-weight: 100;
+	font: 25px 'Roboto', Sans-serif;
+	margin: 0px;
+	margin-top: 10px;
+	color: Green;
+	border-bottom: 1px solid;
+}
+#stranka table{
+	width: 100%;
+	font: 18px Calibri, Sans-serif, Arial;
+}
+#stranka table .adminServices{
+	border-bottom: 1px solid;
+}
+#stranka table h2{
+	margin: 0;
+	font-weight: 100;
+	font: 25px 'Roboto' sans-serif;
+}
+#stranka form input[type=text], #stranka form input[type=password], #stranka form input[type=email]{
+	width: 90%;
+	font: 18px Calibri, Sans-serif, Arial;
+	padding-left: 2px;
+	border: 1px solid;
+}
+#stranka table tr td input[type=submit]{
+	width: 100%;
+	height: 30px;
+	border-radius: 35px;
+	cursor: pointer;
+	transition: 1s all;
+	border: 1px solid Gold;
+	background: Gold;
+	font-size: 90%;
+	margin-right: 3vw;
+	margin-left: 3vw;
+}
+#stranka table tr td input[type=submit]:hover{
+	background: Green;
+	border-color: Green;
+	color: White;
+}

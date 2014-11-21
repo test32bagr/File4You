@@ -1,0 +1,155 @@
+*:focus{
+	outline: none;
+}
+html, body{
+	background: Whitesmoke;
+	margin: 0px;
+	padding: 0px;
+}
+a{
+	text-decoration: none;
+	transition: 500ms all;
+}
+header #hlavicka{
+	background: Black;
+	text-align: right;
+	color: White;
+	padding: 5px;
+	font-family: Signika, Sans-serif;
+}
+header #hlavicka div{
+	margin-left: auto;
+	margin-right: auto;
+	width: 80vw;
+}
+header #hlavicka a{
+	color: White;
+}
+header #hlavicka a:hover{
+	color: orange;
+}
+header #podhlavicka{
+	background: LightGray;
+	-webkit-box-shadow: 0px 5px 24px 0px rgba(50, 50, 50, 0.8);
+	-moz-box-shadow: 0px 5px 24px 0px rgba(50, 50, 50, 0.8);
+	box-shadow: 0px 5px 24px 0px rgba(50, 50, 50, 0.8);
+}
+header #podhlavicka h2{
+	margin: 0px;
+	text-align: center;
+	font-weight: 100;
+	font: 35px 'Roboto', Calibri, Arial, Sans-serif;
+}
+#stranka{
+	margin-left: auto;
+	margin-right: auto;
+	width: 95vw;
+}
+table{
+	width: 100%;
+	margin-top: 10px;
+	font-family: Signika, Sans-serif;
+}
+table caption{
+	margin-top: 25px;
+}
+table caption #caption{
+	font: 2.5vw Signika, Sans-serif;
+}
+table caption #caption img{
+	margin-top: 25px;
+	width: 45vw;
+}
+table tr td a{
+	color: Blue;
+}
+table tr td a:hover{
+	color: Green;
+}
+@media(max-width: 814px){
+	table tr th{ display: none; }
+}
+#upload_button{
+	position: absolute;
+	right: 1vw;
+	bottom: 0;
+	border-radius: 5px;
+	border: 1px solid;
+	border-bottom: none;
+	border-bottom-left-radius: 0px;
+	border-bottom-right-radius: 0px;
+	cursor: pointer;
+	transition: 600ms all;
+}
+#upload_button:hover{ background: LightGray; }
+/*******************************************
+	Nahrávací okno
+********************************************/
+#upload_window{
+	width: 400px;
+	border: 1px solid;
+	padding: 10px;
+	border-radius: 5px;
+	position: relative;
+	left: 10vw;
+	top: 0;
+	font: 16px Signika, Calibri, Sans-serif, Arial;
+}
+#upload_window input[type=file]{
+	width: 80%;
+	padding-bottom: 5px;
+}
+#upload_window input[type=text]{
+	width: 70%;
+	font: 16px Calibri, Sans-serif, Arial;
+	padding-left: 3px;
+	border-radius: 2px;
+	border: 1px solid;
+}
+#upload_window select{
+	width: 40%;
+}
+#upload_window input[type=submit]{
+	border: 1px solid White;
+	width: 35%;
+	height: 25px;
+	background: Gray;
+	cursor: pointer;
+	transition: 700ms all;
+	color: White;
+	font: 16px Calibri;
+}
+#upload_window input[type=submit]:hover{
+	background: White;
+	color: Black;
+	border-color: Black;
+}
+#upload_info{
+	text-align: center;
+	border-bottom: 1px solid;
+	margin-bottom: 10px;
+}
+/************************************
+	Konec nahrávání
+************************************/
+footer{
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	font: 17px Signika, sans-serif;
+}
+footer a{
+	color: Black;
+}
+footer a:hover{
+	color: Orange;
+}
+#shutdown{
+	padding: 10px; 
+	margin-left: auto;
+	margin-right: auto;
+	width: 40vw;
+	margin-top: 25px;
+	font-family: 'Signika', sans-serif;
+	text-align: center;
+}

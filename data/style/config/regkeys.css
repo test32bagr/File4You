@@ -1,0 +1,112 @@
+*:focus{
+	outline: none;
+}
+html, body{
+	background: Whitesmoke;
+	margin: 0px;
+	padding: 0px;
+}
+a{
+	text-decoration: none;
+	transition: 500ms all;
+}
+header #hlavicka{
+	background: Black;
+	text-align: right;
+	color: White;
+	padding: 5px;
+	font-family: Signika, Sans-serif;
+}
+header #hlavicka div{
+	margin-left: auto;
+	margin-right: auto;
+	width: 80vw;
+}
+header #hlavicka a{
+	color: White;
+}
+header #hlavicka a:hover{
+	color: orange;
+}
+header #podhlavicka{
+	background: LightGray;
+	-webkit-box-shadow: 0px 5px 24px 0px rgba(50, 50, 50, 0.8);
+	-moz-box-shadow: 0px 5px 24px 0px rgba(50, 50, 50, 0.8);
+	box-shadow: 0px 5px 24px 0px rgba(50, 50, 50, 0.8);
+}
+header #podhlavicka h2{
+	margin: 0px;
+	text-align: center;
+	font-weight: 100;
+	font: 35px 'Roboto', Calibri, Arial, Sans-serif;
+}
+#stranka{
+	margin-left: auto;
+	margin-right: auto;
+	width: 95vw;
+}
+footer{
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	font: 17px Signika, sans-serif;
+}
+footer a{
+	color: Black;
+}
+footer a:hover{
+	color: Orange;
+}
+#stranka table{
+	margin: 0px;
+	font: 17px Calibri, sans-serif, Arial;
+	border-bottom: 1px solid;
+	width: 100%;
+	margin-top: 10px;
+}
+.regkeysAction{
+	margin: 0;
+}
+.regkeysAction tr td h2{
+	margin: 0;
+	font-weight: 300;
+	font-family: 'Roboto', sans-serif;
+}
+.regkeysAction input[type=text]{
+	width: 80%;
+	font-size: 17px;
+}
+.regkeysAction input[type=submit]{
+	font-size: 100%;
+	width: 45%;
+	border-radius: 35px;
+	border: 1px solid Gold;
+	background: Gold;
+	cursor: pointer;
+	transition: 1s all;
+}
+.regkeysAction input[type=submit]:hover{
+	border-color: Green;
+	color: White;
+	background: Green;
+}
+#addKeyError, #delKeyError{
+	margin: 0;
+	color: Red; 
+	text-align: center;
+	border: 1px solid;
+	padding: 5px;
+	width: 80%;
+	margin-left: auto;
+	margin-right: auto;
+}
+#addKeyComplete, #delKeyComplete{
+	margin: 0;
+	color: Green; 
+	text-align: center;
+	border: 1px solid;
+	padding: 5px;
+	width: 80%;
+	margin-left: auto;
+	margin-right: auto;
+}
