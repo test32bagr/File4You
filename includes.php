@@ -16,6 +16,7 @@
 			<div id="messages" readonly></div>
 			<form method="POST">
 				<textarea id="message" name="message" placeholder="Zpráva do chatu"></textarea>
+				<script>sendOrNewLine();</script>
 				<input type="button" onclick="sendMessage();" id="sendMessageChat" value="Odeslat">
 			</form>
 		</div>';

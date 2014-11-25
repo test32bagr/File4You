@@ -66,9 +66,8 @@ $(document).ready(function(){
 
 
 function getCaret(el) { 
-	if (el.selectionStart) { 
-		return el.selectionStart; 
-	} else if (document.selection) { 
+	if (el.selectionStart) return el.selectionStart; 
+	else if (document.selection) { 
 		el.focus(); 
 
 		var r = document.selection.createRange(); 
@@ -82,13 +81,18 @@ function getCaret(el) {
 	return 0; 
 }
 
-$("#message").keyup(function(event){
-	if (event.keyCode == 13 && event.shiftKey) {
-		var content = this.value;
-		var caret = getCaret(this);
-		this.value = content.substring(0, caret) + "\n" + content.substring(carent, content.length - 1);
-		event.stopPropagation();
-	} else if(event.keyCode == 13){
-		sendMessage();
-	}
-});
+function sendOrNewLine(){
+	$("#message").keypress(function(event){
+		var codeKey = parseInt((event.keyCode ? event.keyCode : event.which));
+		if(codeKey == 119){
+			sendMessage();
+		} else if(codeKey == 13) {
+			var content = this.val();
+			var caret = getCaret(this);
+			this.value = content.substring(0, caret) + "\n" + content.substring(carent, content.length - 1);
+			e.stopPropagation();
+		}
+	});
+}
+
+/**/
