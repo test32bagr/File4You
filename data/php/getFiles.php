@@ -3,7 +3,6 @@
 	@ini_set("display_errors", 1);
 
 	include 'mysqli.php';
-	$mysqli->set_charset('utf8');
 	
 	include './Mobile_Detect/Mobile_Detect.php';
 	$detect = new Mobile_Detect;

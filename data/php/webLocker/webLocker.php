@@ -12,10 +12,8 @@
 	
 	session_start();
 	$version = "1.00";
-	$mysqli->set_charset('utf8');
 	include 'data/php/Mobile_Detect/Mobile_Detect.php';
 	$detect = new Mobile_Detect;
-	if ($mysqli->connect_error) die('WEBLOCKER RELOADED: Nepodařilo se připojit k MySQL serveru ('.$mysqli->connect_errno.') '.$mysqli->connect_error);
 	
 	function Mobil(){
 		global $detect;
