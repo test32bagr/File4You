@@ -1,4 +1,6 @@
 <?php
+	function logFormat($string){ return StrFTime("%d.%m.%Y %H:%M:%S", Time()).' '.$string.'<br>'; }
+	
 	if(!empty($_POST['addUserKey'])){
 		if(!empty($_POST['addUserKey-Name']) && !empty($_POST['addUserKey-Surname'])){
 			$Name = $mysqli->escape_string(remove_accents($_POST['addUserKey-Name']));
@@ -17,7 +19,7 @@
 			if($mysqli->query("SELECT * FROM cloud_reg_allow WHERE Surname='$Surname'")->num_rows > 0){
 				$mysqli->query("DELETE FROM cloud_reg_allow WHERE Surname='$Surname'");
 				fwrite($logFile, logFormat('Byl zablokován registrační klíč pro uživatele: '.$Name.' '.$Surname));
-				$delUserKey = '<p id="delKeyComplete">Registrační klíč byl zablokován byl zablokován.</p>';
+				$delUserKey = '<p id="delKeyComplete">Registrační klíč byl zablokován.</p>';
 			} else { $delUserKey = '<p id="delKeyError">Zadaný uživatel neexistuje</p>'; }
 		} else { $delUserKey = '<p id="delKeyError">Nevyplnil jsi některé pole.</p>'; }
 	} else {
