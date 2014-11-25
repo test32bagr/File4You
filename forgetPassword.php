@@ -10,7 +10,7 @@
 	else 
 		$Mobil = '<link rel="stylesheet" href="data/style/zapomenuteHeslo.css">';
 	
-	$mysqli = new Mysqli('localhost', 'c2cloud', 'passwd', 'c2mycloud');
+	include 'data/php/mysqli.php';
 	$headers = '';
 	$logFile = fopen("data/log.txt", "a+");
 	include 'data/php/delDiacritic.php';
@@ -39,6 +39,9 @@
 				<title>File4you | Registrace</title>
 				<meta charset="utf-8">
 				<link href="http://fonts.googleapis.com/css?family=Roboto:300,100&amp;subset=latin-ext" rel="stylesheet">
+				<script src="data/javascript/jquery.js"></script>
+				<script src="data/javascript/core.js"></script>
+				<script src="data/javascript/HAO.js"></script>
 				'.$Mobil.'
 			</head>
 			<body>

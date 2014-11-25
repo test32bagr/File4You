@@ -21,10 +21,8 @@
 				<link href=\'http://fonts.googleapis.com/css?family=Roboto:300,100&amp;subset=latin-ext\' rel=\'stylesheet\'>
 				<link href=\'http://fonts.googleapis.com/css?family=Signika:300&amp;subset=latin-ext\' rel=\'stylesheet\'>
 				<script src="data/javascript/jquery.js"></script>
-				<script src="data/javascript/uploadForm.js"></script>
-				<script src="data/javascript/disableButtons.js"></script>
+				<script src="data/javascript/core.js"></script>
 				<script src="data/javascript/chat.js"></script>
-				<script src="data/javascript/getFiles.js"></script>
 				<script src="data/javascript/HAO.js"></script>
 				'.$extJS_CSS.'
 			</head>

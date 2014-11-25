@@ -2,6 +2,7 @@
 	function notChange(){ return 'Nebyla provedena změna.'; }
 	function retError($string){ return '<span style="color: Red">'.$string.'</span>'; }
 	function returnGood($string){ return '<span style="color: Green">'.$string.'</span>'; }
+	function logFormat($string){ return StrFTime("%d.%m.%Y %H:%M:%S", Time()).' '.$string.'<br>'; }
 	
 	if(isset($_POST['ApplyChanges_setAdmin'])){
 		if(isset($_POST['setAdmin_nick'])){

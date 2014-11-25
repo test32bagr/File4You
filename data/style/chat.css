@@ -53,7 +53,7 @@
 	height: 20%;
 	padding: 0px;
 }
-#chat form input[type=submit]{
+#chat form #sendMessageChat{
 	float: right;
 	border-radius: 0;
 	border: 1px solid DimGray;

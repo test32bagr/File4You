@@ -7,15 +7,11 @@
 	*/
 	
 	$hash = 'SHA256';
-	$mysql_user = 'c2cloud';
-	$mysql_pass = 'passwd';
-	$mysql_ip = 'localhost';
-	$mysql_db = 'c2mycloud';
+	include '../mysqli.php';
 	$mysql_request = "SELECT Heslo FROM cloud_users WHERE username='%mysqlNick%'"; 
 	
 	session_start();
 	$version = "1.00";
-	$mysqli = new mysqli($mysql_ip, $mysql_user, $mysql_pass, $mysql_db);
 	$mysqli->set_charset('utf8');
 	include 'data/php/Mobile_Detect/Mobile_Detect.php';
 	$detect = new Mobile_Detect;
