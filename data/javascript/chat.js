@@ -1,26 +1,34 @@
 var adress = document.location.href;
 var requestMethod = document.getElementById("request-method").content;
 
+var hlasky = {
+	open: "Otevřít", 
+	close: "Zavřít",
+	littleChat: "Malý chat. Nelze posunout.", 
+	sended: "Odesláno!", 
+	send: "Odeslat"
+}
+
 $(document).ready(function(){		
 	if(requestMethod == "GET"){
 		$("#chat").css("bottom", "-370px");
-		$("#openorclose").html("Otevřít");
+		$("#openorclose").html(hlasky.open);
 	} else if(requestMethod == "POST") {
-		$("#openorclose").html("Zavřít");
+		$("#openorclose").html(hlasky.close);
 		$("#chat").css("bottom:", "0px");
 	}
 });			
 function openClose(){
 	if($("#chat").css("bottom") == "-370px"){
-		$("#openorclose").html("Zavřít");
+		$("#openorclose").html(hlasky.close);
 		$("#chat").animate({bottom: 0}, 900);
 		try{
 			document.getElementById('down').scrollIntoView(); 
 		} catch(e){
-			console.warn("Je malý chat. Nelze posunout.");
+			console.warn(hlasky.littleChat);
 		}
 	} else {
-		$("#openorclose").html("Otevřít");
+		$("#openorclose").html(hlasky.open);
 		$("#chat").animate({bottom: -370}, 900);
 	}
 }
@@ -37,10 +45,10 @@ function sendMessage(){
 		message: $("#message").val()
 	}
 	$.post(adress.replace("index.php", "")+"data/php/sendChatMessage.php", dataMessage, function(data){
-		$("#sendMessageChat").val("Odesláno!");
+		$("#sendMessageChat").val(hlasky.sended);
 		$("#message").val("");
 		setTimeout(function(){
-			$("#sendMessageChat").val("Odeslat");
+			$("#sendMessageChat").val(hlasky.send);
 		}, 3000);
 	});
 }
@@ -51,7 +59,36 @@ $(document).ready(function(){
 		try{
 			document.getElementById('down').scrollIntoView(); 
 		} catch(e){
-			console.warn("Je malý chat. Nelze posunout.");
+			console.warn(hlasky.littleChat);
 		}
 	}, 2500);
+});
+
+
+function getCaret(el) { 
+	if (el.selectionStart) { 
+		return el.selectionStart; 
+	} else if (document.selection) { 
+		el.focus(); 
+
+		var r = document.selection.createRange(); 
+		if (r == null) return 0; 
+		var re = el.createTextRange();
+		var rc = re.duplicate(); 
+		re.moveToBookmark(r.getBookmark());
+		rc.setEndPoint('EndToStart', re); 
+		return rc.text.length; 
+	} 
+	return 0; 
+}
+
+$("#message").keyup(function(event){
+	if (event.keyCode == 13 && event.shiftKey) {
+		var content = this.value;
+		var caret = getCaret(this);
+		this.value = content.substring(0, caret) + "\n" + content.substring(carent, content.length - 1);
+		event.stopPropagation();
+	} else if(event.keyCode == 13){
+		sendMessage();
+	}
 });
