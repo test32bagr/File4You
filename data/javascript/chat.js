@@ -4,9 +4,12 @@ var requestMethod = document.getElementById("request-method").content;
 var hlasky = {
 	open: "Otevřít", 
 	close: "Zavřít",
-	littleChat: "Malý chat. Nelze posunout.", 
 	sended: "Odesláno!", 
-	send: "Odeslat"
+	send: "Odeslat",
+	error: {
+		littleChat: "Malý chat. Nelze posunout.",
+		emptyMessage: "Nemůžeš odesílat prázdné zprávy."
+	}
 }
 
 $(document).ready(function(){		
@@ -25,7 +28,7 @@ function openClose(){
 		try{
 			document.getElementById('down').scrollIntoView(); 
 		} catch(e){
-			console.warn(hlasky.littleChat);
+			console.warn(hlasky.error.littleChat);
 		}
 	} else {
 		$("#openorclose").html(hlasky.open);
@@ -44,6 +47,10 @@ function sendMessage(){
 		nick: $("#nick").html(),
 		message: $("#message").val()
 	}
+	if(dataMessage.message == ""){
+		alert(hlasky.error.emptyMessage);
+		return;
+	}
 	$.post(adress.replace("index.php", "")+"data/php/sendChatMessage.php", dataMessage, function(data){
 		$("#sendMessageChat").val(hlasky.sended);
 		$("#message").val("");
@@ -59,7 +66,8 @@ $(document).ready(function(){
 		try{
 			document.getElementById('down').scrollIntoView(); 
 		} catch(e){
-			console.warn(hlasky.littleChat);
+			console.warn(hlasky.error.littleChat);
 		}
 	}, 2500);
 });
+
