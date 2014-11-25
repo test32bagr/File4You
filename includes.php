@@ -1,5 +1,5 @@
 <?php
-	if($_SERVER['PHP_SELF'] != '/registrace.php' || $_SERVER['PHP_SELF'] != 'registrace.php') include 'data/php/webLocker/webLocker.php';
+	if($_SERVER['PHP_SELF'] != '/registrace.php' || $_SERVER['PHP_SELF'] != 'registrace.php') include 'data/php/webLocker.php';
 	$logFile = fopen("data/log.txt", "a+");
 	include 'data/php/delDiacritic.php';
 	include 'data/php/upload.php';

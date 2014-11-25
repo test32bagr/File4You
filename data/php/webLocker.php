@@ -7,7 +7,7 @@
 	*/
 	
 	$hash = 'SHA256';
-	include '../mysqli.php';
+	include 'mysqli.php';
 	$mysql_request = "SELECT Heslo FROM cloud_users WHERE username='%mysqlNick%'"; 
 	
 	session_start();
