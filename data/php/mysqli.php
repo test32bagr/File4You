@@ -1,5 +1,5 @@
 <?php
-	$mysqli_ip = '';
+	$mysqli_ip = 'localhost';
 	$mysqli_user = '';
 	$mysqli_pass = '';
 	$mysqli_db = '';
