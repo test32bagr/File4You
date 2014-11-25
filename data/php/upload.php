@@ -47,8 +47,8 @@
 			$uploadVysledek = returnError('String', 'Nevyplnil jsi nick souboru nebo jsi nevložil soubor.');
 			$extJS_CSS = returnError('Javascript', '').returnError('CSS', '');
 		}
-	} else { 
-		$uploadVysledek = 'Maximální velikost: <b>20MB</b>'; 
+	} else {
+		$uploadVysledek = 'Maximální velikost: <b>'.ini_get("upload_max_filesize").'B</b>'; 
 		$extJS_CSS = '';
 	}
 ?>
