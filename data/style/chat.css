@@ -40,7 +40,7 @@
 	border-bottom: 1px solid DimGray;
 	font-family: 'Signika', sans-serif; 
 }
-#chat #head span{
+#chat #head #right{
 	float: right;
 	padding-right: 10px;
 }

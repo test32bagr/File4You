@@ -12,6 +12,20 @@ var hlasky = {
 	}
 }
 
+function timeOnChat(time){
+	time = Math.floor(time / 1000);
+	var minuty = Math.floor(time / 60);
+	var sekundy = time % 60;
+	
+	var formatMinuty = "";
+	var formatSekundy = "";
+	
+	formatMinuty = (minuty < 10) ? "0" + minuty : minuty;
+	formatSekundy = (sekundy < 10) ? "0" + sekundy : sekundy;
+	
+	return (formatMinuty + ":" + formatSekundy).trim();
+}
+
 $(document).ready(function(){		
 	if(requestMethod == "GET"){
 		$("#chat").css("bottom", "-370px");
@@ -20,6 +34,12 @@ $(document).ready(function(){
 		$("#openorclose").html(hlasky.close);
 		$("#chat").css("bottom:", "0px");
 	}
+	var countup = 0;
+	setInterval(function(){
+		countup += 1000;
+		var t = "(Online: " + timeOnChat(countup) + ")";
+		$("#time").html(t); 
+	}, 1000);
 });			
 function openClose(){
 	if($("#chat").css("bottom") == "-370px"){

@@ -12,7 +12,7 @@
 		$shutdownAlert = '<div id="shutdown"></div>';
 		$reklama = '<footer><endora></footer>';	
 		$chat = '<div id="chat">
-			<div id="head">Chat<span><div onclick="openClose()" id="openorclose"></div></span></div>
+			<div id="head">Chat <span id="time"></span><span id="right"><div onclick="openClose()" id="openorclose"></div></span></div>
 			<div id="messages" readonly></div>
 			<form method="POST">
 				<textarea id="message" name="message" placeholder="Zpráva do chatu"></textarea>
