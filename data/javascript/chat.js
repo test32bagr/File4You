@@ -37,8 +37,7 @@ $(document).ready(function(){
 	var countup = 0;
 	setInterval(function(){
 		countup += 1000;
-		var t = "(Online: " + timeOnChat(countup) + ")";
-		$("#time").html(t); 
+		$("#time").html("(Online: " + timeOnChat(countup) + ")");
 	}, 1000);
 });			
 function openClose(){
@@ -46,7 +45,7 @@ function openClose(){
 		$("#openorclose").html(hlasky.close);
 		$("#chat").animate({bottom: 0}, 900);
 		try{
-			document.getElementById('down').scrollIntoView(); 
+			$("#down")[0].scrollIntoView(false);
 		} catch(e){
 			console.warn(hlasky.error.littleChat);
 		}
@@ -84,7 +83,7 @@ $(document).ready(function(){
 	setInterval(getMessages, 2000);
 	setTimeout(function(){ 
 		try{
-			document.getElementById('down').scrollIntoView(); 
+			$("#down")[0].scrollIntoView(false);
 		} catch(e){
 			console.warn(hlasky.error.littleChat);
 		}
