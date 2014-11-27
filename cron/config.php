@@ -20,4 +20,7 @@
 	$second_DB[1] = ''; //Username
 	$second_DB[2] = ''; //Pass
 	$second_DB[3] = ''; //Název databáze
+	
+	//Zálohování do souboru
+	$filesJSON = fopen("backup.json", "a+");
 ?>

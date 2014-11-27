@@ -1,4 +1,4 @@
-File4You
+﻿File4You
 
 Internetová služba ke sdílení souborů za pomocí PHP, Javascript a MySQL databáze.
 Aplikace je šířená jako Open source (MIT License)
@@ -31,11 +31,11 @@ Varování:
 	Doporučuje se také povolit podporu souboru .htaccess
 
 Aplikace má volitelnou možnost CRON úlohy pro zálohování databáze na jiný server nebo do souborů.
-Zálohování do souboru se ukládá do několika různých typů a poté se ukládá do archívu na serveru.
+Zálohování do souboru se ukládá do formátu JSON a ukládá se na serveru.
 
 Typy záloh:
 	Další databáze: MySQL
-	Do souboru: PHP, XML, JSON
+	Do souboru: JSON
 	
 Jestli chcete zálohování databáze provádět a nebo ne záleží jenom na vás. Pro spuštění zálohování stačí
-pouze nastavit cron úlohu ve složce "cron" soubor "cron.php"
+pouze nastavit cron úlohu ve složce "cron" soubor "backup.php"
