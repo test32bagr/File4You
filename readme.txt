@@ -29,13 +29,3 @@ Varování:
 		display_errors = On
 	
 	Doporučuje se také povolit podporu souboru .htaccess
-
-Aplikace má volitelnou možnost CRON úlohy pro zálohování databáze na jiný server nebo do souborů.
-Zálohování do souboru se ukládá do formátu JSON a ukládá se na serveru.
-
-Typy záloh:
-	Další databáze: MySQL
-	Do souboru: JSON
-	
-Jestli chcete zálohování databáze provádět a nebo ne záleží jenom na vás. Pro spuštění zálohování stačí
-pouze nastavit cron úlohu ve složce "cron" soubor "backup.php"
