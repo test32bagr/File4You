@@ -18,7 +18,7 @@
 			$full = $size;
 			$size = $size/1024;
 			return floor($size).' MB'.' ('.$full.' kB)';
-		} else { return $size.' kB'; }
+		} else return $size.' kB';
 		
     }
 	function getInfoUserAndSystem(){
@@ -50,7 +50,7 @@
 			elseif($numberFiles >= 2 && $numberFiles < 5) $numberFiles = $numberFiles.' soubory';
 			elseif($numberFiles >= 5) $numberFiles = $numberFiles.' souborů';
 			
-			if($mysqli->query("SELECT filename FROM cloud_files WHERE who='".getNick()."'")->num_rows == 0){ $files = '<caption id="NoFiles">Nenahrál jsi žádný soubor</caption>'; }
+			if($mysqli->query("SELECT filename FROM cloud_files WHERE who='".getNick()."'")->num_rows == 0) $files = '<caption id="NoFiles">Nenahrál jsi žádný soubor</caption>';
 			else {
 				$files = '';
 				if(!$detect->isMobile()) $files = '<tr><th>Nick souboru</th><th>Název souboru</th><th>Typ</th><th>Velikost</th><th>Kdo nahrál</th><th>Akce</th></tr>';
@@ -100,6 +100,7 @@
 			</table>
 			<table class="tables">
 					<tr><td>Verze PHP: </td><td>'.phpversion().'</td></tr>
+					<tr><td>Verze Zend: </td><td>'.zend_version().'</td></tr>
 					<tr><td>Aktuální stránka: </td><td>'.$page.'</td></tr>
 					<tr><td>ROOT: </td><td>'.$root.'</td></tr>
 					<tr><td>Absolutní cesta aktuální stránky: </td><td>'.$root.$_SERVER['PHP_SELF'].'</td></tr>
@@ -110,6 +111,7 @@
 					<tr><td>Počet uložených souborů: </td><td>'.$numberFiles.'</td></tr>
 					<tr><td>Využití souborů: </td><td>'.dirsize("./soubory").' (Limit: 10 GB)</td</tr>
 					<tr><td>Velikost databáze: </td><td>'.$sizeDb['db_size_in_mb'].' MB (Limit: 10GB)</td></tr>
+					<tr><td>Počet odeslaných zpráv v chatu: </td><td>'.$mysqli->query("SELECT * FROM cloud_chat")->num_rows.' zpráv</td></tr>
 				</table>
 				<h2>Moje nahrané soubory</h2>
 				<p id="InfoFiles">Soubory jsou k dispozici ke stažení v klientské sekci.</p>
@@ -196,7 +198,6 @@
 							</tr>
 						</tbody>
 					</table>';
-		}
-		
+		}	
 	}
 ?>

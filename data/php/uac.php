@@ -89,6 +89,12 @@
 			$pass = $mysqli->escape_string(hash('sha256', $_POST['deleteMyAccountPass']));
 			$passDB = $mysqli->query("SELECT Heslo FROM cloud_users WHERE username='".getNick()."'")->fetch_row();
 			if($pass == $passDB[0]){
+				$dellAllFilesRequest = $mysqli->query("SELECT * FROM cloud_files WHERE who='".getNick()."'");
+				while($data = $dellAllFilesRequest->fetch_assoc()){
+					@unlink($_SERVER['DOCUMENT_ROOT']."/soubory/".$data['filename'].".".$data['filetype']);
+					$mysqli->query("DELETE FROM cloud_files WHERE who='".getNick()."' AND name='".$data['name']."'");
+				}
+				//Smazání účtu
 				$mysqli->query("DELETE FROM cloud_users WHERE username='".getNick()."'");
 				fwrite($logFile, logFormat('Uživatel '.getNick().' se smazal.'));
 				header("Location: index.php");

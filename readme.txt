@@ -23,7 +23,7 @@ Varování:
 	Některé věci nemusí fungovat v závislosti na konfiguraci WebServeru.
 	
 	Doporučuje se změnit tyto vlastnosti: 
-		1
+		
 		upload_max_filesize = 20M
 		post_max_size = 20M
 		display_errors = On
