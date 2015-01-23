@@ -157,3 +157,6 @@ footer a:hover{
 #adminServices table{
 	width: 100%;
 }
+#adminServices table thead tr td h2{
+	margin-right: 14.5%;
+}

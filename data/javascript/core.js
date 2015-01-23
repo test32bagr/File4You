@@ -12,9 +12,7 @@ function getFiles(letter){
 	}); 
 }
 
-function uploadForm(){ 
-	$("#upload_window").toggle(600);
-}
+function uploadForm(){ $("#upload_window").toggle(600); }
 
 $(document).ready(function(){
 	setInterval(getFiles, 2000);

@@ -1,9 +1,4 @@
-<?php
-	function notChange(){ return 'Nebyla provedena změna.'; }
-	function retError($string){ return '<span style="color: Red">'.$string.'</span>'; }
-	function returnGood($string){ return '<span style="color: Green">'.$string.'</span>'; }
-	function logFormat($string){ return StrFTime("%d.%m.%Y %H:%M:%S", Time()).' '.$string.'<br>'; }
-	
+<?php	
 	if(isset($_POST['ApplyChanges_setAdmin'])){
 		if(isset($_POST['setAdmin_nick'])){
 			$nick = $mysqli->escape_string(remove_accents($_POST['setAdmin_nick']));
@@ -94,7 +89,7 @@
 					@unlink($_SERVER['DOCUMENT_ROOT']."/soubory/".$data['filename'].".".$data['filetype']);
 					$mysqli->query("DELETE FROM cloud_files WHERE who='".getNick()."' AND name='".$data['name']."'");
 				}
-				//Smazání účtu
+				//Smazání
 				$mysqli->query("DELETE FROM cloud_users WHERE username='".getNick()."'");
 				fwrite($logFile, logFormat('Uživatel '.getNick().' se smazal.'));
 				header("Location: index.php");

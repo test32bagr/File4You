@@ -25,7 +25,7 @@
 						<td>'.$data['Mail'].'</td>
 						<td>'.$data['IPregistrace'].'</td>
 						<td>'.$data['vek'].'</td>
-						<td>'.$isAdmin.'</td>
+						<td align="center">'.$isAdmin.'</td>
 					</tr>';
 				}
 			}
@@ -38,6 +38,6 @@
 					</div>
 				</caption>';
 		}
-		return $out;
+		return $out.'</table>';
 	}
 ?>

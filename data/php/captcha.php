@@ -6,10 +6,9 @@
 	
 	$img = ImageCreate($width, $height);
 
-	$black = ImageColorAllocate($img, 0, 0, 0); 
 	$gray = ImageColorAllocate($img, 204, 204, 204); 
 	
-	ImageFill($img, 0, 0, $black);
+	ImageFill($img, 0, 0, ImageColorAllocate($img, 0, 0, 0));
 	ImageString($img, 5, $width / 2.9, 4, $_SESSION["code"], ImageColorAllocate($img, 255, 255, 255));
 	ImageRectangle($img,0,0,$width-1,$height-1, $gray);
 	imageline($img, 35, 0, $width - 100, $height, $gray);

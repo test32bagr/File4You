@@ -1,6 +1,7 @@
 <?php
 	session_start();
 	function retError($error){ return '<span style="color: Red;">'.$error.'</span>'; }
+	function logFormat($string){ return StrFTime("%d.%m.%Y %H:%M:%S", Time()).' |--> '.$string.'<br>'; }
 	include 'data/php/Mobile_Detect/Mobile_Detect.php';
 	$detect = new Mobile_Detect;
 
@@ -11,8 +12,7 @@
 		$Mobil = '<link rel="stylesheet" href="data/style/zapomenuteHeslo.css">';
 	
 	include 'data/php/mysqli.php';
-	$headers = '';
-	$logFile = fopen("data/log.txt", "a+");
+	$logFile = fopen("log.txt", "a+");
 	include 'data/php/delDiacritic.php';
 	
 	if(isset($_POST['sendRequest'])){
@@ -28,6 +28,7 @@
 						<td>Nové heslo: </td>
 						<td>'.$newPass.'</td>
 					</tr>';
+					fwrite($logFile, logFormat("Bylo resetováno heslo pro uživatele ".$Nick));
 				} else { $text = '<tr align="center"><td colspan="2">'.retError('Zadaný uživatel neexistuje.').'</td></tr>'; }
 			} else { $text = '<tr align="center"><td colspan="2">'.retError('Obrázkové heslo nebylo správně zadané.').'</td></tr>'; }
 		} else { $text = '<tr align="center"><td colspan="2">'.retError('Nebyl vložen nick.').'</td></tr>'; }
@@ -60,7 +61,6 @@
 						<tr><td align="left"><a href="index.php" title="Zpět na přihlášení">Zpět na přihlášení</a></td><td align="right"><input type="submit" name="sendRequest" value="Obnovit heslo"></td></tr>
 					</table>
 				</form>
-				<div id="endora"><endora></div>
 			</body>
 		</html>
 	';

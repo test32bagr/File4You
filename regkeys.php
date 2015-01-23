@@ -22,9 +22,7 @@
 				<script src="data/javascript/core.js"></script>
 				<script src="data/javascript/HAO.js"></script>
 			</head>
-			<body>'.$header.'
-				<div id="stranka">'.getKeys().'</div>
-			</body>
+			<body>'.$header.'<div id="stranka">'.getKeys().'</div></body>
 		</html>
 	';
 ?>

@@ -22,7 +22,7 @@
 						if($mysqli->query("SELECT * FROM cloud_files WHERE filename='$filename'")->num_rows == 0){
 							$type = $mysqli->escape_string($_POST['typeFile']);
 							$DateTime = StrFTime("%d. %m. %Y %H:%M:%S", Time());
-							move_uploaded_file($_FILES['file']['tmp_name'], $_SERVER['DOCUMENT_ROOT']."/soubory/".$filename.".".$filetype) or die("Chyba v nahrávání<br>Chyba: ".$_FILES['file']['error']."<br>".ini_get("upload_max_filesize")."<br>".$_SERVER['DOCUMENT_ROOT']);
+							move_uploaded_file($_FILES['file']['tmp_name'], "/web/sdileni/soubory/".$filename.".".$filetype) or die("Chyba v nahrávání<br>Chyba: ".$_FILES['file']['error']."<br>".ini_get("upload_max_filesize"));
 							$mysqli->query("INSERT INTO cloud_files VALUES ('$filename', '$filetype', '$size', '$fileNick', '$type', '".getNick()."', '$DateTime')");
 							fwrite($logFile, $DateTime.' Uživatel '.getNick().' nahrál soubor s nickem: '.$fileNick.'<br>');
 							$uploadVysledek = '<span style="color: Green">Soubor byl bez sebemenších problémů nahrán.</span>';

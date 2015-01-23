@@ -108,21 +108,23 @@ table tr td a:hover{
 }
 #upload_window select{
 	width: 40%;
+	height: 25px;
+	font: 15px Calibri;
+	margin-top: 10px;
 }
 #upload_window input[type=submit]{
-	border: 1px solid White;
+	border: 1px solid Green;
 	width: 35%;
-	height: 25px;
-	background: Gray;
+	height: 27px;
+	background: Green;
 	cursor: pointer;
-	transition: 700ms all;
+	transition: 500ms all;
 	color: White;
 	font: 16px Calibri;
+	margin-top: 1px;
 }
 #upload_window input[type=submit]:hover{
-	background: White;
-	color: Black;
-	border-color: Black;
+	background: DarkGreen;
 }
 #upload_info{
 	text-align: center;

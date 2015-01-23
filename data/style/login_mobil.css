@@ -1,72 +1,81 @@
-*:focus{ outline: none; }
-body{
+html, body{
 	background: Whitesmoke;
-	font-family: Calibri;
 	margin: 0px;
+	font-family: Segoe UI, Sans-serif;
 }
-#hlavicka{
-	min-width: 100%;
-	box-shadow: 0px 10px 5px #888;
+header{
+	background: #3b679e;
+	background: -moz-linear-gradient(45deg,  #3b679e 0%, #2b88d9 50%, #207cca 51%, #7db9e8 100%);
+	background: -webkit-gradient(linear, left bottom, right top, color-stop(0%,#3b679e), color-stop(50%,#2b88d9), color-stop(51%,#207cca), color-stop(100%,#7db9e8));
+	background: -webkit-linear-gradient(45deg,  #3b679e 0%,#2b88d9 50%,#207cca 51%,#7db9e8 100%);
+	background: -o-linear-gradient(45deg,  #3b679e 0%,#2b88d9 50%,#207cca 51%,#7db9e8 100%);
+	background: -ms-linear-gradient(45deg,  #3b679e 0%,#2b88d9 50%,#207cca 51%,#7db9e8 100%);
+	background: linear-gradient(45deg,  #3b679e 0%,#2b88d9 50%,#207cca 51%,#7db9e8 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3b679e', endColorstr='#7db9e8',GradientType=1 );
 }
-#hlavicka h2{
+header h1{
 	margin: 0px;
 	margin-left: auto;
 	margin-right: auto;
-	width: 100%;
-	color: White;
-	font-weight: 300;
+	width: 90%;
+	font-size: 25px;
+	font-weight: 100;
 	text-align: center;
-	font: 30px 'Roboto', sans-serif;
-	border-bottom: 1px solid;
-	background: DodgerBlue;
-}
-#powered{
-	display: none;
+	padding: 10px;
+	color: White;
 }
 form{
 	margin: 0px;
-	margin-left: auto;
-	margin-right: auto;
-	width: 80%;
-	margin-top: 30px;
-}
-form input{
-	width: 100%;
-	margin-top: 8px;
-	height: 30px;
-	border: 1px solid;
-	font: 15px Arial;
-	padding: 3px;
-	padding-right: 0px;
-}
-form input[type=submit]{
-	margin: 0px;
-	padding: 0px;
 	margin-top: 10px;
 	margin-left: auto;
 	margin-right: auto;
-	width: 100%;
-	height: 40px;
-	font: 20px Calibri, sans-serif, arial;
-	background: Gold;
-	border: 1px solid Gold;
-	cursor: pointer;
-	color: Black;
-	transition: 500ms all;
+	width: 90%;
+	font-size: 19px;
 }
-form input[type=submit]:hover{
-	background: Orange;
-	border: 1px solid Orange;
+form input[type=text], form input[type=password]{
+	width: 93%;
+	font-size: 16px;
+	padding: 5px;
+	border: 1px solid Gray;
 }
-#reg{
-	margin: 0px;
-	margin-top: 20px;
+#spodni{
+	margin-top: 10px;
 	text-align: center;
 }
-a{
+#spodni a{
 	text-decoration: none;
 	color: Gray;
-	font: 19px Calibri, sans-serif, arial;
-	transition: 500ms all;
+	font-size: 25px;
+	transition: 600ms all;
 }
-a:hover{ color: Blue; }
+#spodni a:hover{
+	color: Black;
+}
+form input[type=submit]{
+	margin-top: 15px;
+	padding: 10px;
+	font-size: 22px;
+	word-wrap: break-word;
+	border: 1px solid Gold;
+	background: Gold;
+	cursor: pointer;
+	transition: 600ms all;
+}
+form input[type=submit]:hover{
+	background: Green;
+	border-color: Green;
+	color: White;
+}
+#BadLogin{
+	color: Red;
+	font: 25px 'Open Sans Condensed', sans-serif;
+	text-align: center;
+}
+#BadLogin a{
+	color: Gray;
+	text-decoration: none;
+	transition: 600ms all;
+}
+#BadLogin a:hover{
+	color: Black;
+}

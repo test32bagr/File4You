@@ -1,7 +1,7 @@
 <?php
 	$mysqli_ip = 'localhost';
-	$mysqli_user = '';
-	$mysqli_pass = '';
+	$mysqli_user = 'c2cloud';
+	$mysqli_pass = 'a92f6ee53a';
 	$mysqli_db = 'c2mycloud';
 	
 	$mysqli = new Mysqli($mysqli_ip, $mysqli_user, $mysqli_pass, $mysqli_db);

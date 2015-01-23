@@ -1,6 +1,4 @@
 <?php
-	function logFormat($string){ return StrFTime("%d.%m.%Y %H:%M:%S", Time()).' '.$string.'<br>'; }
-	
 	if(!empty($_POST['addUserKey'])){
 		if(!empty($_POST['addUserKey-Name']) && !empty($_POST['addUserKey-Surname'])){
 			$Name = $mysqli->escape_string(remove_accents($_POST['addUserKey-Name']));

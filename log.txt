@@ -1,0 +1,79 @@
+﻿25.10.2014 18:48:35 |--> Spuštěna služba File4You <br>
+25.10.2014 18:51:25 |--> Synchronizace databáze <br>
+25.10.2014 19:03:06 |--> Byl přidán registrační klíč pod příjmením: Kotlan<br>
+25.10.2014 19:04:54 |--> Byl zablokován registrační klíč pro uživatele: Jaroslav Kotlan<br>
+25.10.2014 19:07:03 |--> Uživatel Bagr32 je nyní administrátor.<br>
+25.10.2014 19:07:15 |--> Uživatel Bagr32 nyní není administrátor.<br>
+25.10.2014 19:27:11 |--> Byl smazán účet: Bagr32<br>
+26.10.2014 18:45:18 |--> Byl registrován nový uživatel s uživatelským jménem: janch32<br>
+26.10.2014 18:50:20 |--> Byl registrován nový uživatel s uživatelským jménem: janch32<br>
+26.10.2014 18:53:39 |--> Byl registrován nový uživatel s uživatelským jménem: janch32<br>
+26. 10. 2014 21:49:14 |--> Uživatel Misha12 nahrál soubor s nickem: cosinevim<br>
+26. 10. 2014 21:50:24 |--> Uživatel Misha12 nahrál soubor s nickem: nevííím<br>
+26. 10. 2014 21:50:53 |--> Uživatel Misha12 nahrál soubor s nickem: Blbost<br>
+26. 10. 2014 21:57:59 |--> Uživatel Misha12 nahrál soubor s nickem: Deska<br>
+26. 10. 2014 21:58:56 |--> Uživatel Misha12 nahrál soubor s nickem: enter<br>
+27.10.2014 09:46:53 |--> Byl registrován nový uživatel s uživatelským jménem: janch32<br>
+27.10.2014 09:46:53 |--> Byl registrován nový uživatel s uživatelským jménem: janch32<br>
+27. 10. 2014 10:19:57 |--> Uživatel Misha12 nahrál soubor s nickem: Summer Freedom<br>
+27.10.2014 11:16:18 |--> Byl registrován nový uživatel s uživatelským jménem: thief<br>
+27.10.2014 11:16:18 |--> Byl registrován nový uživatel s uživatelským jménem: thief<br>
+27. 10. 2014 12:48:38 |--> Uživatel Misha12 nahrál soubor s nickem: Jakasihudba<br>
+27. 10. 2014 12:52:10 |--> Uživatel Misha12 nahrál soubor s nickem: technooo<br>
+27. 10. 2014 13:56:21 |--> Uživatel Misha12 nahrál soubor s nickem: ja a vodka<br>
+27. 10. 2014 13:57:47 |--> Uživatel Misha12 nahrál soubor s nickem: coi<br>
+27. 10. 2014 14:00:00 |--> Uživatel Misha12 nahrál soubor s nickem: Serebro<br>
+27. 10. 2014 14:01:50 |--> Uživatel Misha12 nahrál soubor s nickem: blb<br>
+27. 10. 2014 14:02:40 |--> Uživatel Misha12 nahrál soubor s nickem: obraz<br>
+27. 10. 2014 14:03:19 |--> Uživatel Misha12 nahrál soubor s nickem: hash<br>
+27. 10. 2014 14:04:14 |--> Uživatel Misha12 nahrál soubor s nickem: sysi<br>
+27.10.2014 14:25:06 |--> Byl změněn nick z: Misha12 na t<br>
+27.10.2014 14:27:26 |--> Byl změněn nick z: t na Misha12<br>
+27.10.2014 15:00:32 |--> Byl smazán účet: janch32<br>
+27.10.2014 15:00:37 |--> Byl smazán účet: thief<br>
+27. 10. 2014 16:58:40 |--> Uživatel Misha12 nahrál soubor s nickem: gh<br>
+27.10.2014 19:40:10 |--> Byl registrován nový uživatel s uživatelským jménem: thief<br>
+27. 10. 2014 19:49:37 |--> Uživatel Misha12 nahrál soubor s nickem: Smart Defrag<br>
+27. 10. 2014 20:38:20 |--> Uživatel Misha12 nahrál soubor s nickem: ajaxcaptcha<br>
+27. 10. 2014 20:41:27 |--> Uživatel Misha12 nahrál soubor s nickem: TestPHP<br>
+02. 12. 2014 17:22:45 |--> Uživatel Superuser nahrál soubor s nickem: test<br>
+02.12.2014 17:22:57 |--> Uživatel Superuser se smazal.<br>
+02.12.2014 17:24:41 |--> Byl registrován nový uživatel s uživatelským jménem: Superuser<br>
+02. 12. 2014 17:25:27 |--> Uživatel Superuser nahrál soubor s nickem: test<br>
+02. 12. 2014 17:27:55 |--> Uživatel Superuser nahrál soubor s nickem: testíík<br>
+02. 12. 2014 17:29:19 |--> Uživatel Misha12 nahrál soubor s nickem: KokotinadoTWA<br>
+02. 12. 2014 17:30:42 |--> Uživatel Misha12 nahrál soubor s nickem: Blažekjekokot<br>
+02. 12. 2014 17:31:29 |--> Uživatel Misha12 nahrál soubor s nickem: dfvgbnjm,<br>
+02. 12. 2014 17:32:19 |--> Uživatel Superuser nahrál soubor s nickem: Blažekjekokot<br>
+02.12.2014 17:32:31 |--> Uživatel Superuser se smazal.<br>
+03.12.2014 08:49:33 |--> Byl registrován nový uživatel s uživatelským jménem: Ondra26<br>
+03.12.2014 12:41:21 |--> Byl smazán účet: Nebyla provedena zmena<br>
+03.12.2014 12:46:23 |--> Byl registrován nový uživatel s uživatelským jménem: JaSuEvza<br>
+03.12.2014 12:47:49 |--> Byl změněn nick z: JaSuEvza na Justice for all<br>
+03.12.2014 12:48:36 |--> Byl změněn nick z: Justice for all na Metallica - Justice for all<br>
+03.12.2014 13:41:21 |--> Byl smazán účet: Metallica - Justice for all<br>
+03. 12. 2014 13:42:13 |--> Uživatel Misha12 nahrál soubor s nickem: Občanka<br>
+03.12.2014 13:42:26 |--> Byl registrován nový uživatel s uživatelským jménem: Metallica - Justice for all<br>
+03.12.2014 20:09:01 |--> Byl změněn nick z: Metallica - Justice for all na Evzen prdic much ojeb tyc<br>
+04.12.2014 07:59:40 |--> Byl registrován nový uživatel s uživatelským jménem: rulez4629<br>
+04.12.2014 11:24:14 |--> Uživatel Evzen prdic much ojeb tyc je nyní administrátor.<br>
+04.12.2014 11:29:24 |--> Uživatel Evzen prdic much ojeb tyc nyní není administrátor.<br>
+04.12.2014 11:32:48 |--> Byl změněn nick z: Evzen prdic much ojeb tyc na For whom the bell tolls<br>
+05.12.2014 09:01:10 |--> Byl registrován nový uživatel s uživatelským jménem: Bukva32<br>
+05. 12. 2014 09:04:07 |--> Uživatel Misha12 nahrál soubor s nickem: NěcoZajímavého<br>
+05. 12. 2014 09:11:06 |--> Uživatel Misha12 nahrál soubor s nickem: NěcoZajímavého<br>
+05.12.2014 09:20:15 |--> Byl registrován nový uživatel s uživatelským jménem: necasm<br>
+05.12.2014 11:45:27 |--> Byl registrován nový uživatel s uživatelským jménem: Pluhy<br>
+05.12.2014 20:30:04 |--> Byl registrován nový uživatel s uživatelským jménem: Superuser<br>
+11. 12. 2014 14:08:43 |--> Uživatel Misha12 nahrál soubor s nickem: kmkmkl<br>
+11.12.2014 14:10:10 |--> Uživatel Superuser je nyní administrátor.<br>
+11.12.2014 15:13:38 |--> Uživatel Superuser nyní není administrátor.<br>
+11.12.2014 15:13:44 |--> Uživatel Superuser je nyní administrátor.<br>
+11. 12. 2014 21:10:04 |--> Uživatel Misha12 nahrál soubor s nickem: fdsjfi<br>
+11. 12. 2014 21:50:55 |--> Uživatel Misha12 nahrál soubor s nickem: ZHW-Míra<br>
+11. 12. 2014 22:55:46 |--> Uživatel For whom the bell tolls nahrál soubor s nickem: Krucipusk-Láskajekurva<br>
+11. 12. 2014 22:58:51 |--> Uživatel For whom the bell tolls nahrál soubor s nickem: Metallica<br>
+12. 12. 2014 12:38:00 |--> Uživatel Misha12 nahrál soubor s nickem: vlak<br>
+18. 12. 2014 09:32:20 |--> Uživatel Misha12 nahrál soubor s nickem: fdghjk<br>
+29. 12. 2014 13:52:05 |--> Uživatel For whom the bell tolls nahrál soubor s nickem: dfaf<br>
+29. 12. 2014 13:59:28 |--> Uživatel Misha12 nahrál soubor s nickem: Webovky_Opraveno<br>29.12.2014 14:37:55 |--> Uživatel Misha12 změnil své heslo.<br>03.01.2015 20:10:38 |--> Byl zablokován registrační klíč pro uživatele: Martin Lipovsky<br>06.01.2015 14:03:15 |--> Byl smazán účet: lipos<br>06.01.2015 16:18:58 |--> Byl přidán registrační klíč pod příjmením: Jilek<br>06/01/2015 16:20:20 |--> Byl registrován nový uživatel s uživatelským jménem: miraji<br>06. 01. 2015 16:22:12 Uživatel miraji nahrál soubor s nickem: Lun<br>06. 01. 2015 16:22:46 Uživatel miraji nahrál soubor s nickem: schema<br>06. 01. 2015 19:45:07 Uživatel miraji nahrál soubor s nickem: nemoc<br>06. 01. 2015 19:45:29 Uživatel miraji nahrál soubor s nickem: rur<br>06. 01. 2015 19:47:12 Uživatel miraji nahrál soubor s nickem: čokl<br>16. 01. 2015 07:59:30 Uživatel Misha12 nahrál soubor s nickem: kokot<br>16. 01. 2015 08:48:21 Uživatel Misha12 nahrál soubor s nickem: BlažekjeKOKOT!!!<br>

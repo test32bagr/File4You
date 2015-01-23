@@ -19,7 +19,7 @@
 				<script src="data/javascript/core.js"></script>
 				<script src="data/javascript/HAO.js"></script>
 			</head>
-			<body>'.$header.'<div id="stranka"><div id="log">'.fread($logFile, filesize("data/log.txt")).'</div></div></body>
+			<body>'.$header.'<div id="stranka"><div id="log">'.fread($logFile, filesize("log.txt")).'</div></div></body>
 		</html>
 	';
 ?>

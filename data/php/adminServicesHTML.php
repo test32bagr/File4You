@@ -6,7 +6,13 @@
 		if($isAdmin[0] == 'true'){
 			return '<div id="adminServices">
 				<table>
-					<thead><h2>Řízení systému</h2></thead>
+					<thead>
+						<tr>
+							<td colspan="2" align="center">
+								<h2>Řízení systému</h2>
+							</td>
+						</tr>
+					</thead>
 					<tbody>
 						<tr>
 							<td>Seznam registračních klíčů: </td>

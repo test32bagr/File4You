@@ -19,9 +19,7 @@
 				<script src="data/javascript/core.js"></script>
 				<script src="data/javascript/HAO.js"></script>
 			</head>
-			<body>'.$header.'
-				<div id="stranka">'.getuacHTML().'</div>
-			</body>
+			<body>'.$header.'<div id="stranka">'.getuacHTML().'</div></body>
 		</html>
 	';
 ?>

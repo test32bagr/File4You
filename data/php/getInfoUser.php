@@ -40,7 +40,7 @@
 			elseif($pocetUzivateluAdmin === 2 && $pocetUzivateluAdmin < 5) $pocetUzivateluAdmin .= ' uživatelé';
 			elseif($pocetUzivateluAdmin >= 5) $pocetUzivateluAdmin .= ' uživatelů';
 			
-			$adresar = opendir($_SERVER['DOCUMENT_ROOT']."/soubory");
+			$adresar = opendir("/web/sdileni/soubory");
 			$numberFiles = (int)0;
 			while($soubor = readdir($adresar)) $numberFiles++;
 			$numberFiles = $numberFiles - 2;
@@ -57,22 +57,9 @@
 				$get_DB = $mysqli->query("SELECT filename, filetype, name, typ, size, Date_time FROM cloud_files WHERE who='".getNick()."'");
 				while($data = $get_DB->fetch_assoc()){
 					if($detect->isMobile() && !$detect->isTablet()){
-						$files .= '<tr align="center">
-							<td>'.$data['name'].'</td>
-							<td>'.$data['filename'].'.'.$data['filetype'].'</td>
-							<td>'.$data['typ'].'</td>
-							<td>'.$data['size'].' kB</td>
-							<td>'.$data['Date_time'].'</td>
-						</tr>';
+						$files .= '<tr align="center"><td>'.$data['name'].'</td><td>'.$data['filename'].'.'.$data['filetype'].'</td><td>'.$data['typ'].'</td><td>'.$data['size'].' kB</td><td>'.$data['Date_time'].'</td></tr>';
 					} else {
-						$files .= '<tr id="'.$data['name'].'">
-							<td>'.$data['name'].'</td>
-							<td>'.$data['filename'].'.'.$data['filetype'].'</td>
-							<td>'.$data['typ'].'</td>
-							<td>'.$data['size'].' kB</td>
-							<td>'.$data['Date_time'].'</td>
-							<td align="center"><form method="post"><input type="submit" name="DeleteFile-'.$data['name'].'" value="Smazat"></form></td>
-						</tr>';
+						$files .= '<tr id="'.$data['name'].'"><td>'.$data['name'].'</td><td>'.$data['filename'].'.'.$data['filetype'].'</td><td>'.$data['typ'].'</td><td>'.$data['size'].' kB</td><td>'.$data['Date_time'].'</td><td align="center"><form method="post"><input type="submit" name="DeleteFile-'.$data['name'].'" value="Smazat"></form></td></tr>';
 					}
 				}
 			}
@@ -81,14 +68,17 @@
 						
 			$root = $_SERVER['DOCUMENT_ROOT'];
 			$port = (int)$_SERVER['SERVER_PORT'];
-			if($port === 80) $page = 'http://'.$_SERVER['SERVER_NAME'].$_SERVER['PHP_SELF'];
-			elseif($port === 443) $page = 'https://'.$_SERVER['SERVER_NAME'].$_SERVER['PHP_SELF'];
-			else $page = $_SERVER['SERVER_NAME'].':'.$port.$_SERVER['PHP_SELF'];
-			
-			if($port === 80) $pageType = 'HTTP';
-			elseif($port === 443) $pageType = 'HTTPS';
-			else $pageType = 'Neznámý';
-			
+			if($port === 80){
+				$page = 'http://'.$_SERVER['SERVER_NAME'].$_SERVER['PHP_SELF'];
+				$pageType = 'HTTP';
+			} elseif($port === 443){
+				$page = 'https://'.$_SERVER['SERVER_NAME'].$_SERVER['PHP_SELF'];
+				$pageType = 'HTTPS';
+			} else {
+				$page = $_SERVER['SERVER_NAME'].':'.$port.$_SERVER['PHP_SELF'];
+				$pageType = 'Neznámý port: '.$port;
+			}
+
 			return '<h2>Informace o uživateli a systému</h2>
 			<table class="tables">
 				<tr><td>Jméno: </td><td>'.$userInfo['Jmeno'].'</td></tr>
@@ -103,14 +93,13 @@
 					<tr><td>Verze Zend: </td><td>'.zend_version().'</td></tr>
 					<tr><td>Aktuální stránka: </td><td>'.$page.'</td></tr>
 					<tr><td>ROOT: </td><td>'.$root.'</td></tr>
-					<tr><td>Absolutní cesta aktuální stránky: </td><td>'.$root.$_SERVER['PHP_SELF'].'</td></tr>
 					<tr><td>Port: </td><td>'.$port.' ('.$pageType.')</td></tr>
 					<tr><td>Klientská IP: </td><td>'.$_SERVER['REMOTE_ADDR'].'</td></tr>
 					<tr><td>Počet registrovaných uživatelů: </td><td>'.$pocetUzivatelu.'</td></tr>
 					<tr><td>Počet administrátorů: </td><td>'.$pocetUzivateluAdmin.'</td></tr>
 					<tr><td>Počet uložených souborů: </td><td>'.$numberFiles.'</td></tr>
-					<tr><td>Využití souborů: </td><td>'.dirsize("./soubory").' (Limit: 10 GB)</td</tr>
-					<tr><td>Velikost databáze: </td><td>'.$sizeDb['db_size_in_mb'].' MB (Limit: 10GB)</td></tr>
+					<tr><td>Využití souborů: </td><td>'.dirsize("./soubory").' (Limit: '.(disk_total_space("/") / 1024 / 1024 / 1024).' GB)</td</tr>
+					<tr><td>Velikost databáze: </td><td>'.$sizeDb['db_size_in_mb'].' MB (Limit: '.(disk_total_space("/") / 1024 / 1024 / 1024).' GB)</td></tr>
 					<tr><td>Počet odeslaných zpráv v chatu: </td><td>'.$mysqli->query("SELECT * FROM cloud_chat")->num_rows.' zpráv</td></tr>
 				</table>
 				<h2>Moje nahrané soubory</h2>

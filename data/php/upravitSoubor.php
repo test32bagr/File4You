@@ -1,5 +1,4 @@
 <?php
-	function retError($string){ return '<p style="color: Red; text-align: center;">'.$string.'</p>'; }
 	$outputDataRename = '';
 	if(!empty($_POST['renameFile'])){
 		if(!empty($_POST['FileNick']) && !empty($_POST['NewName'])){

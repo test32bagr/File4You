@@ -19,9 +19,7 @@
 				<script src="data/javascript/core.js"></script>
 				<script src="data/javascript/HAO.js"></script>
 			</head>
-			<body>'.$header.'
-				<div id="stranka">'.getUsers().'</div>
-			</body>
+			<body>'.$header.'<div id="stranka">'.getUsers().'</div></body>
 		</html>
 	';
 ?>
