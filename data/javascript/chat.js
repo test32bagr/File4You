@@ -1,4 +1,4 @@
-var adress = document.location.href;
+﻿var adress = document.location.href;
 var requestMethod = $("#request-method").attr("content");
 
 var hlasky = {
@@ -40,7 +40,10 @@ function openClose(){
 
 function getMessages(letter){
 	$.get(adress.replace("index.php", "")+'data/php/ajaxChat.php', function(data){ 
-		$("#messages").html(data+"<span id=\"down\"></span>"); 
+		data += "<span id=\"down\"></span>";
+		$("#messages").html(data);
+		
+		console.log("GET: Přijato: " + data.length + " bajtů");
 	}); 
 }
 
