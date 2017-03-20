@@ -25,7 +25,7 @@
 		global $mysqli, $detect, $option, $outputDataRename, $outputDataType;
 		
 		$userInfo = $mysqli->query("SELECT * FROM cloud_users WHERE username='".getNick()."'")->fetch_assoc();
-		$isAdmin = $mysqli->query("SELECT isAdmin FROM cloud_users WHERE username='".getNick()."'")->fetch_row();
+		$isAdmin = $userInfo["isAdmin"];
 		
 		if($isAdmin[0] == 'true'){
 			$pocetUzivatelu = (int)$mysqli->query("SELECT * FROM cloud_users")->num_rows;
